@@ -2,6 +2,12 @@ require "spec_helper"
 
 describe "Dog" do
 
+  describe ".new" do
+    it "initializes with one argument - a name" do
+      expect{Dog.new("Snoopy")}.to_not raise_error
+    end
+  end
+
   let!(:pluto) { Dog.new("Pluto") }
   let!(:fido) { Dog.new("Fido") }
   let!(:maddy) { Dog.new("Maddy") }
