@@ -40,7 +40,7 @@ describe "Dog" do
 
     describe ".print_all" do
       it "is a class method that puts out the name of each dog to the terminal" do
-        expect {Dog.print_all}.to output("Pluto\nFido\nMaddy\n").to_stdout
+        expect{Dog.print_all}.to output("Pluto\nFido\nMaddy\n").to_stdout
       end
 
     end
