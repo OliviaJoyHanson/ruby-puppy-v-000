@@ -27,7 +27,7 @@ describe "Dog" do
   describe "class methods" do
     describe ".all" do
       it "is a class method returns all dog instances" do
-        expect (Dog.all).to match([pluto,fido,maddy])
+        expect(Dog.all).to match([pluto,fido,maddy])
       end
     end
 
